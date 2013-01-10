@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# dsgrouputil is deployed to /usr/local/bin; however, some of our systems are looking for it at /usr/sbin because it had been put there at one time. Link the old location to the new:
+
+#rm -rf /usr/sbin/dsgrouputil
+ln -f /usr/local/bin/dsgrouputil /usr/sbin/dsgrouputil
+
+
+exit 0
